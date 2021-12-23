@@ -26,4 +26,26 @@ def sumNumbers(n):
     print(sum)
 
 
-sumNumbers(5)
+# sumNumbers(5)
+
+# Exercício 4 - calcular valor pago pela gasolina
+
+def amountPaidForFuel(liters, type):
+    prices = {
+        'G': 2.50,
+        'A': 1.90
+    }
+
+    price = liters * prices[type]
+
+    discounts = {
+        'G': lambda value:
+        value - value * 0.03 if liters <= 20 else value - value * 0.05,
+        'A': lambda value:
+        value - value * 0.04 if liters <= 20 else value - value * 0.06
+    }
+
+    print(discounts[type](price))
+
+
+amountPaidForFuel(25, 'A')
