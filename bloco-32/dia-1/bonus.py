@@ -13,4 +13,17 @@ def createTriangle(n):
         print((i + 1) * '*')
 
 
-createTriangle(5)
+# createTriangle(5)
+
+# Exercício 3 - retornar soma de determinado intervalo de numeros
+
+def sumNumbers(n):
+    sum = 0
+
+    for i in range(1, n + 1):
+        sum += i
+
+    print(sum)
+
+
+sumNumbers(5)
