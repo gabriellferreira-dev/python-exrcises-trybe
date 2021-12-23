@@ -2,7 +2,7 @@
 
 ## Check-List
 - Bloco 32 - Introdução à Python
-  - [ ] Dia 1 - Aprendendo Python
+  - [X] Dia 1 - Aprendendo Python
   - [ ] Dia 2 - Entrada e Saída de dados
   - [ ] Dia 3 - Testes
 
