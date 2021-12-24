@@ -42,4 +42,15 @@ def scrambledWordGame(words):
         rounds -= 1
 
 
-scrambledWordGame(['Janaina', 'Comer', 'Vacina'])
+# scrambledWordGame(['Janaina', 'Comer', 'Vacina'])
+
+# Exercício 3 - Buscar palavras para o exercício 2 de um arquivo
+
+def readWordsFile():
+    file = open('words.txt', 'r')
+    words = file.read().split('\n')
+    return words
+
+
+words = readWordsFile()
+scrambledWordGame(words)
